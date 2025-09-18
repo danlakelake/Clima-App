@@ -1,4 +1,4 @@
-const API_KEY = '196c7ac1af1a29e1dc7a86eeed186d23'; // API key OpenWeather
+const API_KEY = '196c7ac1af1a29e1dc7a86eeed186d23'; // <- API KEY OpenWeather
 const btn_search = document.getElementById('buscar');
 const result = document.getElementById('resultado');
 const btn_clear = document.getElementById('limpiar');
