@@ -10,6 +10,7 @@ btn_search.addEventListener('click', () => {
     alert('Porfavor ingresa una ciudad');
     return;
   }
+  getWeather(city);
 });
 
 // Función asincrona para obtener clima
@@ -21,7 +22,19 @@ async function getWeather(city) {
       throw new Error('Ciudad no encontrada');
     }
     const data = await response.json();
+    showWeather(data);
   } catch (error) {
     result.innerHTML = '❌ ' + error.message;
   }
+}
+
+// Función mostrar clima
+function showWeather(data) {
+  const { name, main, weather } = data;
+  result.innerHTML = `
+        <h2 class="text-lg">${name}</h2>
+        <p>🌡️ Temp: ${main.temp} °C</p>
+        <p>☁️ Estado: ${weather[0].description}</p>
+        <p>💧 Humedad: ${main.humidity}%</p>
+    `;
 }
