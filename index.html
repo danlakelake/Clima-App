@@ -4,16 +4,37 @@
     <meta charset="UTF-8" />
     <title>Clima App</title>
     <!-- Tailwind v4 -->
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-gradient-to-br from-blue-200 to-blue-400 h-screen flex items-center justify-center">
+  <body class="h-screen flex items-center justify-center text-gray-800">
+    <!-- Wrap Nubes -->
+    <div id="wrap-clouds">
+      <!-- Nubes -->
+      <div class="x1">
+        <div class="cloud"></div>
+      </div>
+      <div class="x2">
+        <div class="cloud"></div>
+      </div>
+      <div class="x3">
+        <div class="cloud"></div>
+      </div>
+      <div class="x4">
+        <div class="cloud"></div>
+      </div>
+      <div class="x5">
+        <div class="cloud"></div>
+      </div>
+    </div>
+    <!-- Container Form -->
     <div class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md text-center">
       <h1 class="text-2xl font-bold mb-4">Consultar Clima 🌤️</h1>
       <div class="flex gap-2">
         <input
           type="text"
           id="ciudad"
-          placeholder="Escribe una ciudad"
+          placeholder="Busca una ciudad"
           class="flex-1 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <button id="buscar" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition cursor-pointer">Buscar</button>
