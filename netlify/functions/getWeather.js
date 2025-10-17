@@ -1,4 +1,4 @@
-// Función Netlify para obtener clima desde OpenWeather
+// Función que Netlify ejecuta para obtener clima desde OpenWeather
 exports.handler = async function (event) {
   try {
     // Extrae el parámetro 'city' de la solicitud
@@ -22,7 +22,7 @@ exports.handler = async function (event) {
       };
     }
 
-    // Fetch a endpoint Netlify
+    // Fetch al endpoint de OpenWeather
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=es`;
     const response = await fetch(url);
 
