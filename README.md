@@ -22,8 +22,8 @@ https://beautiful-figolla-b6bab3.netlify.app/
    git clone <URL_DEL_REPO>
    cd <NOMBRE_DEL_REPO>
    ```
-2. Instalar NPM / Install NPM
-   npm install
+2. Instalar NPM / Install NPM\
+   _npm install_
 
 3. Crear archivo .env / Create .env file\
    _OPENWEATHER_API_KEY=tu_clave_privada_
